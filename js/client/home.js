@@ -238,8 +238,8 @@ Home.startGame = function(){
     $('#modal').modal('show');
 
       var request = $.ajax({
-        // url: "https://satoshis.games/quest",
-        url: "http://localhost:3333/quest",
+        url: "https://satoshis.games/quest",
+        // url: "http://localhost:3333/quest",
         type: 'post',
         dataType: 'json'
     });
@@ -303,8 +303,8 @@ $(document).ready(function () {
 
     $('#check-button').on('click', function () {
         var request = $.ajax({
-            // url: "https://satoshis.games/questconfirm",
-            url: "http://localhost:3333/questconfirm",
+            url: "https://satoshis.games/questconfirm",
+            // url: "http://localhost:3333/questconfirm",
             data: {
                 id: invoiceId
             },
