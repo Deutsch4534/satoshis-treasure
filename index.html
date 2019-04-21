@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satoshi's Quest</title>
+    <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/retro-game-items-revamp-border/100/weapon_sword_hero_attack_blade_thick-512.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+   <style>
+        body {
+            background:-webkit-gradient(radial, center center, 0, center center, 1200, from(rgba(0,0,0,0)), to(rgba(0,0,0,1))), url('/assets/sprites/wood.png') repeat, #000;
+            margin: 0;
+        }
+        #game {
+            cursor: url('/assets/sprites/hand.png'), auto;
+            max-width: 980px;
+            max-height: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'pixel';
+            src: url('/assets/fonts/advocut-webfont.ttf');
+        }
+        .fontPreload {
+            font-family: 'pixel';
+            position: absolute;
+            left: -100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="fontPreload">.</div> <!-- don't forget the dot, the div cannot be empty-->
+    <div id='game'></div>
+      <!-- Modal -->
+      <div id="modal" class="modal fade" id="joinquest" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                      <center><h5 class="modal-title" id="exampleModalCenterTitle">Play Satoshi's Quest - 1000 sats</h5></center>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <center><img id="loading" style="height:60px" src="https://quest.satoshis.games/img/loading.gif" alt="loading">
+                  <a id="invoiceRoute" href=""><img id="payreq" style="display:none" src="" alt="Invoice Request"></a></center>
+              </div>
+              <div class="modal-footer">
+                  <button id="check-button" type="button" class="btn btn-primary">Confirm</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="//code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="js/client/phaser.js"></script>
+<script src="js/client/easystar.min.js"></script>
+<script src="js/client/phaser-input.min.js"></script>
+<script src="js/client/Being.js" type="text/javascript"></script>
+<script src="js/client/Human.js" type="text/javascript"></script>
+<script src="js/client/NPC.js" type="text/javascript"></script>
+<script src="js/client/Player_client.js" type="text/javascript"></script>
+<script src="js/client/Monster_client.js" type="text/javascript"></script>
+<script src="js/client/Item_client.js" type="text/javascript"></script>
+<script src="js/client/Factory.js" type="text/javascript"></script>
+<script src="js/client/game.js" type="text/javascript"></script>
+<script src="js/client/home.js" type="text/javascript"></script>
+<script src="js/client/Decoder.js" type="text/javascript"></script>
+<script src="js/client/main.js" type="text/javascript"></script>
+<script src="js/client/client.js" type="text/javascript"></script>
+<script src="js/spaceMap.js" type="text/javascript"></script>
+<script src="js/CoDec.js" type="text/javascript"></script>
+<script src="js/AOIutils.js" type="text/javascript"></script>
+
+</html>
