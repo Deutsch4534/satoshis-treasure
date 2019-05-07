@@ -1,4 +1,4 @@
-# Lightning Monopoly
+# Satoshis Quest
 players can interact with each other using the in-game chat system or by working together to defeat enemies. There are achievements available to unlock as one plays. Loot is dropped when players defeat the enemies pick it up!.
 
 
@@ -77,3 +77,5 @@ This project is licensed under the GNU GPL v3 License - see the [GNU GPL v3](htt
 ## Acknowledgments
 
 * Fork us and contribute!
+
+![quest](https://user-images.githubusercontent.com/31220861/57338997-82955a00-7127-11e9-8767-df216f6d6d80.gif)
